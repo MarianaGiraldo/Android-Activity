@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nHome"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item
+        android:id="@+id/nPerson"
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+    <item
+        android:id="@+id/nLocation"
+        android:icon="@drawable/ic_baseline_location_on_24" />
+    <item
+        android:id="@+id/nNotification"
+        android:icon="@drawable/ic_baseline_notifications_24" />
+
+    <item
+        android:id="@+id/nSettings"
+        android:icon="@drawable/ic_baseline_settings_24" />
+</menu>

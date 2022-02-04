@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@drawable/maps">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="@dimen/icon_size"
+                        android:src="@drawable/ic_baseline_chevron_left_24"
+                        app:tint="@color/white" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_baseline_menu_24"
+                        app:tint="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="@dimen/person_icon"
+                        android:layout_height="@dimen/person_icon"
+                        android:src="@drawable/person_icon"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jack Lemonade"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/jack"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lemonadejack.mail.com"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Where do you want to go today?"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/search_bar"
+                android:layout_margin="15dp"
+                android:elevation="30sp"
+                >
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:layout_margin="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search the location"
+                    android:layout_gravity="center_vertical"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
